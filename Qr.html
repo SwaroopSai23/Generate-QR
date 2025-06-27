@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="Qr.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>QR Code Generator</h1>
+        
+        <input type="text" id="url-input" placeholder="Enter URL here">
+        
+        <div class="buttons">
+            <button onclick="generateQRCode()"  class="center">Generate QR Code</button>
+            <button onclick="downloadQRCode()"  class="center">Download</button>
+            <button onclick="copyToClipboard()" class="center">Share</button>
+        </div>
+
+        <div id="qrcode"></div>
+        <p id="message"></p>
+    </div>
+
+    <script src="Qr.js"></script>
+</body>
+</html>
